@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Draw.module.css";
-// import Drawing from "./Drawing";
 import { Canvas } from "./Canvas";
 import { ClearCanvasButton } from "./ClearCanvasButton";
 import { CanvasProvider } from "./CanvasContext";
@@ -9,19 +8,17 @@ import { CanvasProvider } from "./CanvasContext";
 function Draw() {
   return (
     <div>
+      {/* HEADER */}
       <header className={styles.draw_Header}>
         <Link to="/">
           <img src="./img/logo_kids.png" alt="logo" />
         </Link>
       </header>
+
+      {/* MAIN */}
       <section className={styles.main}>
         <div className={styles.container}>
           <div className={styles.title}>내 그림과 어울리는 음악 추천 받기</div>
-
-          <div className={styles.btn_drawing}>
-            <i className="fa-solid fa-pencil"></i>
-            <i className="fa-solid fa-eraser"></i>
-          </div>
 
           <div className={styles.upload_drawing}>
             <CanvasProvider>
