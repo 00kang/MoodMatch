@@ -4,6 +4,7 @@ import styles from "../styles/Draw.module.css";
 import { Canvas } from "./Canvas";
 import { ClearCanvasButton } from "./ClearCanvasButton";
 import { CanvasProvider } from "./CanvasContext";
+import { CanvasDownload } from "./CanvasDownload";
 
 function Draw() {
   return (
@@ -28,7 +29,8 @@ function Draw() {
           </div>
 
           <Link to="/recommend">
-            <button>완성</button>
+            {/* <button>완성</button> */}
+            <CanvasDownload />
           </Link>
 
           <div className={styles.tip}>

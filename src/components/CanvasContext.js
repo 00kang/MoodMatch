@@ -14,6 +14,7 @@ export const CanvasProvider = ({ children }) => {
     canvas.height = 500;
     canvas.style.width = `${800}px`;
     canvas.style.height = `${500}px`;
+    canvas.fillStyle = "white";
 
     const context = canvas.getContext("2d");
     context.lineCap = "round";

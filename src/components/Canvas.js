@@ -15,6 +15,7 @@ export function Canvas() {
       onMouseUp={finishDrawing}
       onMouseMove={draw}
       ref={canvasRef}
+      // ref={(ref) => (this.canvasRef = ref)}
     />
   );
 }
