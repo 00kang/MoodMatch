@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/Draw.module.css";
 import { Canvas } from "./Canvas";
@@ -27,12 +27,10 @@ function Draw() {
               <Canvas />
             </CanvasProvider>
           </div>
-
           <Link to="/recommend">
             {/* <button>완성</button> */}
             <CanvasDownload />
           </Link>
-
           <div className={styles.tip}>
             TIP! 내가 표현하고 싶은 것을 단어와 함께 표현해보세요~
           </div>
